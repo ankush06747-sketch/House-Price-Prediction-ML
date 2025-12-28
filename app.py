@@ -34,8 +34,9 @@ model = RandomForestRegressor()
 model.fit(X,y)
 house_price = model.predict(final_value)
 
-with st.spinner('Predicting House price')
+with st.spinner('Predicting House Price'):
   time.sleep(3)
 st.write(house_price)
+
 
 
